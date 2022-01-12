@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Random Josemanuel Facts</title>
+    <meta
+      name="description"
+      content="Get a random fact our beloved friend Josemanuel."
+    />
+    <meta name="author" content="The IPFS Docs team." />
+    <style>
+      body {
+        margin: 15px auto;
+        max-width: 650px;
+        line-height: 1.2;
+        font-family: sans-serif;
+        font-size: 2em;
+        color: #fff;
+        background: #444;
+      }
+      a {
+        color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body onload="main()">
+    <h1>Random Josemanuel Facts</h1>
+    <img src="aventuras-de-joselito-en-america-2.jpg" />
+    <p id="output_p"></p>
+    <h2><a href="about.html">About this website</a></h2>
+    <script>
+      function main() {
+        const facts = [
+          'Es antivacunas.',
+          'Es negacionista.',
+          'Es muy malo al DOTA.',
+          'Es bastante malo al mus.',
+          'Le pone Ayuso.',
+          'Se pajea con el Cid.'
+        ]
+        document.querySelector('#output_p').innerHTML =
+          facts[Math.floor(Math.random() * facts.length)]
+      }
+    </script>
+  </body>
+</html>
